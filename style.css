@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+/* global */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+  /*para a conversão do REM*/
+}
+
+body {
+  background-color: #d8e5f7;
+  font-size: 1.6rem;
+  /*para a conversão do REM*/
+}
+
+/* HEADER */
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(#6689bb, #7a9dd1, #6689bb);
+}
+
+.header__nav-item-main {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.container-theme {
+  margin-left: 3rem;
+}
+
+.header__logo {
+  width: 10.5rem;
+  background: linear-gradient(#dfdfdf, #ffffff, #c2c2c2);
+  padding: 0.55rem 1.5rem 0.8rem 1.2rem;
+  margin-left: 6rem;
+  box-shadow: 90.9rem 0.9rem 0.4rem -0.8rem #6e6e6e;
+  box-shadow: inset 0 0 0.2rem #636363;
+}
+
+.header__nav-main-text {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.header__nav-main-text:last-child {
+  margin-left: 3rem;
+}
+
+.header__nav-input-img {
+  width: 2rem;
+}
+
+.header__nav-text {
+  text-decoration: none;
+  color: #304f7a;
+  font-size: 1.5rem;
+  margin-right: 3rem;
+  font-weight: 600;
+}
+
+#logout {
+  color: #fff;
+  font-weight: 500;
+  margin-right: 6rem;
+}
+
+.header__nav-input {
+
+  display: flex;
+  align-items: center;
+  background-color: #607fac;
+  height: 3rem;
+  width: 22rem;
+  margin-right: 2rem;
+  border-radius: 5rem;
+  display: none;
+}
+
+.header__nav-input-placeholder {
+  height: 1.8rem;
+  margin-left: 0.7rem;
+}
+
+.header__nav-input-img {
+  margin-left: 0.7rem;
+}
+
+/* MAIN */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.5fr;
+  grid-template-areas:
+    "personal-profile    about           projects"
+    "personal-profile    education       projects"
+    ".......             certificados    ........";
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 2rem auto 3rem auto;
+}
+
+/* PERSONAL */
+
+.personal-profile {
+  grid-area: personal-profile;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: inset -0.1rem -0.1rem 0.2rem 0.05rem #b3b3b3;
+  padding: 2rem 1.5rem;
+  height: 60rem;
+}
+
+.personal-profile__img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.personal-profile__img {
+  width: 15rem;
+}
+
+.personal-profile__name {
+  color: #276983;
+  display: flex;
+  margin-top: 1.8rem;
+  font-size: 1.8rem;
+  justify-content: center;
+}
+
+.personal-profile__about {
+  margin: 1rem 0 1.8rem 0;
+  color: #8b8b8b;
+  text-align: center;
+}
+
+.personal-profile__about-text {
+  margin-top: 0.6rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.personal-profile__add {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 5rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.personal-profile__linkedin,
+.personal-profile__github {
+  text-decoration: none;
+  font-size: 1.4rem;
+  border: solid 0.5px #d8e5f7;
+  padding: 0.2rem 0.8rem;
+  background-color: #d8e5f7;
+  border-radius: 0.6rem;
+  color: #282828;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 10rem;
+  margin: 0.4rem 0;
+}
+
+.personal-profile__linkedin:hover,
+.personal-profile__github:hover {
+  background-color: #96b0d5;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.hr {
+  border: 0;
+  border-bottom: 1.5px solid #c4c4c4;
+}
+
+.personal-profile__nav-item {
+  text-decoration: none;
+  display: flex;
+  color: #505050;
+  background-color: #f5f8ff;
+  border: 1px solid #e0e0e0;
+  padding-left: 0.5rem;
+  padding-top: 0.8rem;
+  height: 3.5rem;
+}
+
+.personal-profile__nav-item:hover {
+  color: #08070f;
+  cursor: pointer;
+  background-color: #eaf4f8;
+}
+
+.profile hr {
+  margin: 0.5rem 0;
+}
+
+/* ABOUT */
+
+.about {
+  grid-area: about;
+  background-color: #fff;
+  border-radius: 0.8rem 5rem 0.8rem 0.8rem;
+  box-shadow: inset -0.1rem -0.1rem 0.2rem 0.05rem #b3b3b3;
+  height: 405px;
+}
+
+.about__name {
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.about__container {
+  padding: 1rem 0;
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__item p {
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.about__social {
+  background-color: #aecaf1;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-left: 1rem;
+  font-size: 0.9em;
+}
+
+.about__container-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about div {
+  display: flex;
+  margin: 0 0.5rem;
+}
+
+.about hr {
+  margin: 0 1rem;
+}
+
+.about span {
+  color: #666666;
+  min-width: 200px;
+  text-align: end;
+  padding-right: 10px;
+}
+
+.about__age,
+.about__skills,
+.about__pets,
+.about__site {
+  background-color: #dceefd;
+  height: 4rem;
+  font-size: 15px;
+  padding-top: 0.5rem;
+}
+
+.about__birthday,
+.about__interests,
+.about__humor,
+.about__city {
+  background-color: #eef8fe;
+  height: 4rem;
+  font-size: 15px;
+  padding-top: 0.5rem;
+}
+
+.about__content {
+  padding-top: 0.8rem;
+}
+
+/* EDUCATION */
+
+.education {
+  grid-area: education;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
+  padding: 2rem 1.5rem;
+}
+
+.education li {
+  list-style-type: disc;
+  margin-top: 2rem;
+  margin-left: 2.4rem;
+  color: #4f646c;
+}
+
+/* CERTIFICATES */
+
+.certificates {
+  grid-area: certificados;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
+  padding: 2rem 1.5rem;
+}
+
+.certificates div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.certificates img {
+  width: 90%;
+}
+
+.certificates img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.certif__link {
+  width: 100%;
+}
+
+/* PROJECTS */
+
+.projects {
+  grid-area: projects;
+  background-color: #fff;
+  border-radius: 0.8rem;
+  box-shadow: inset -1px -1px 2px 0.5px #b3b3b3;
+  height: 50.5rem;
+}
+
+.projects__title {
+  display: flex;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.projects__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.projects__item {
+  align-items: center;
+}
+
+.projects__item-subtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.projects__container:first-of-type {
+  border-top: 1px solid #a8a7a7;
+  padding-top: 1rem;
+  margin-top: 1.2rem;
+}
+
+.projects__container:last-of-type {
+  border-bottom: 1px solid #a8a7a7;
+  padding-bottom: 2.5rem;
+}
+
+.project__preview {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+.project__preview:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.15);
+  transition: 0.5s;
+}
+
+.view-all {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  font-weight: 600;
+  color: #007bac;
+}
+
+.view-all:hover {
+  color: #081f28;
+}
+
+/* DARK HEADER */
+
+
+.dark main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1.5fr;
+  grid-template-areas:
+    "personal-profile    about           projects"
+    "personal-profile    education       projects"
+    ".......             certificados    ........";
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 2rem auto 3rem auto;
+}
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bi {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.bi-moon {
+  display: none;
+}
+
+.dark .header__logo {
+  width: 10.5rem;
+  background: linear-gradient(#494949, #2e3146, #494949);
+  padding: 0.55rem 1.5rem 0.8rem 1.2rem;
+  margin-left: 6rem;
+  box-shadow: 90.9rem 0.9rem 0.4rem -0.8rem #6e6e6e;
+  box-shadow: inset 0 0 0.2rem #636363;
+}
+
+.dark .header__nav {
+  background: linear-gradient(#263238, #263238, #263238);
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .header__nav-main-text {
+  color: #d6d5d3;
+}
+
+.dark #logout {
+  color: #d6d5d3;
+}
+
+.dark .header__nav-text {
+  color: #777575;
+  font-weight: 400;
+}
+
+.dark {
+  background-color: #1a1f22;
+}
+
+.dark .hr {
+  border: 0;
+  border-bottom: 1.5px solid #414141;
+}
+
+/* DARK PERSONAL PROFILE */
+
+.dark .personal-profile {
+  background-color: #222a2e;
+}
+
+.dark .personal-profile__name {
+  color: #8aa3aa;
+}
+
+.dark .personal-profile__github,
+.dark .personal-profile__linkedin {
+  background-color: #1b1b1d;
+  color: #a1a1a1;
+}
+
+.dark .personal-profile__github:hover,
+.dark .personal-profile__linkedin:hover {
+  background-color: #333236;
+  color: #a1a1a1;
+}
+
+.dark .personal-profile hr {
+  color: black;
+}
+
+.dark .personal-profile__nav-item {
+  background-color: #2e383d;
+  border: 1px solid #1a1f22;
+  color: #8b8b8b;
+}
+
+.dark .personal-profile {
+  box-shadow: inset -0.1rem -0.1rem 0.2rem 0.05rem #131313;
+}
+
+.personal-profile__nav-item:hover {
+  color: #08070f;
+  cursor: pointer;
+}
+
+/*DARK  ABOUT */
+
+.dark .about {
+  background-color: #222a2e;
+  box-shadow: inset -0.1rem -0.1rem 0.2rem 0.05rem #131313;
+}
+
+.dark .about__name {
+  color: #8aa3aa;
+}
+
+.dark .about__item {
+  color: #aaa7a7;
+}
+
+.about span {
+  color: #979797;
+}
+
+.dark .about__social {
+  color: #7d7d7e;
+  background-color: #2e383d;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.dark .about__age,
+.dark .about__skills,
+.dark .about__site {
+  background-color: #222a2e;
+  color: #aaa7a7;
+}
+
+.dark .about__birthday,
+.dark .about__city,
+.dark .about__interests {
+  background-color: #2e383d;
+  color: #aaa7a7;
+}
+
+.dark .about__site a {
+  text-decoration: none;
+  color: #5a95ac;
+}
+
+/* DARK EDUCATION */
+
+.dark .education {
+  background-color: #222a2e;
+  box-shadow: inset -1px -1px 2px 0.5px #131313;
+}
+
+.dark .education span {
+  color: #a0a0a0;
+  font-weight: 600;
+}
+
+.dark .education a {
+  color: #5a95ac;
+}
+
+.dark .education li {
+  color: #aaa7a7;
+}
+
+/*DARK CERTIFICATES */
+
+.dark .certificates {
+  background-color: #222a2e;
+  box-shadow: inset -1px -1px 2px 0.5px #131313;
+}
+
+.dark .certificates span {
+  color: #a0a0a0;
+  font-weight: 600;
+}
+
+.dark .certificates a {
+  color: #5a95ac;
+}
+
+/* DARK PROJECTS */
+
+.dark .projects {
+  background-color: #222a2e;
+  box-shadow: inset -1px -1px 2px 0.5px #131313;
+}
+
+.dark .projects__title {
+  color: rgb(168, 168, 168);
+}
+
+.dark .projects__item-subtitle {
+  color: #8f8f8f;
+}
+
+.dark .view-all {
+  color: #5a95ac;
+}
+
+.dark .projects__container:first-of-type {
+  border-bottom: none;
+  border-top: 1px solid #494949;
+}
+
+.dark .projects__container:last-of-type {
+  border-bottom: 1px solid #494949;
+}
